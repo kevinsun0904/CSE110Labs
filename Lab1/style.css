@@ -32,6 +32,11 @@ h2 {
     background-color: rgb(245, 240, 230);
 }
 
+#subscribe {
+    color: white;
+    background-image: url(https://www.ucsd.edu/_resources/img/bg-orbs-1.jpg);
+}
+
 .section {
     width: 100%;
     scroll-margin-top: 153px;
@@ -50,18 +55,20 @@ ul {
   
 li {
     float: left;
-    background-color: #182b49;
 }
   
 li a {
     display: block;
     text-align: center;
     padding: 14px 16px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
 }
-  
-  /* Change the link color to #111 (black) on hover */
+
 li a:hover {
     color: white;
+    background-color: #182b49;
 }
 
 .grid-container {
