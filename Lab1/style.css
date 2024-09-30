@@ -5,6 +5,11 @@ body {
 div {
     padding: 10px;
     display: inline-block;
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 28px;
 }
 
 #navbar {
@@ -71,4 +76,26 @@ li a:hover {
     color: white;
     height: 500px;
     overflow: scroll;
+}
+
+@media screen and (max-width: 800px) {
+    ul {
+        display: none;
+    }
+
+    .navbar-logo {
+        max-width: 75%;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    div {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
