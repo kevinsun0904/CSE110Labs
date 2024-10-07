@@ -94,15 +94,13 @@ input {
 }
 
 .favorites-container {
-  height: 178px;
+  position: absolute;
+  bottom: 30px;
+  height: 230px;
   width: 200px;
 }
 
 .favorites-list {
   height: 155px;
   overflow: auto;
-}
-
-.theme {
-  width: 100vh;
 }
