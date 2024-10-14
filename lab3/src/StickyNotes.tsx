@@ -14,7 +14,7 @@ const StickyNotes = () => {
     id: -1,
     title: "",
     content: "",
-    label: Label.other,
+    label: Label.personal,
   };
   const [createNote, setCreateNote] = useState(initialNote);
 
@@ -59,6 +59,7 @@ const StickyNotes = () => {
 
             <div>
               <textarea
+                placeholder="Note Content"
                 onChange={(event) =>
                   setCreateNote({ ...createNote, content: event.target.value })
                 }
@@ -109,6 +110,7 @@ const StickyNotes = () => {
                         color: currentTheme.background,
                       }}
                       onClick={() => onNoteDelete(note)}
+                      data-testid={`${note.id}-button`}
                     >
                       x
                     </button>
